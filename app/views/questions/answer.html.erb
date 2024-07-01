@@ -1,5 +1,11 @@
-<p>You: <%= params[:question] %> </p>
+<h2>Stupid Coaching</h2>
 
-<p>Your coach: <%= @answer %></p>
+<p class="text text-left"><%= params[:question] %> </p>
+<p class="text text-cursive text-left"> -You</p>
 
-<%= link_to "Ask another question", ask_path %>
+<p class="text text-bold text-left bg-warning bg-opacity-10"><%= @answer %></p>
+<p class="text text-cursive text-left bg-warning bg-opacity-10"> -Your coach</p>
+
+<%# <a href="ask_path">Ask another question</a> %>
+
+<%= link_to "Ask another question", ask_path, :style=>'text-decoration: none;' %>
